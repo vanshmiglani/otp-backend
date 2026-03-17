@@ -40,9 +40,6 @@ app.post("/verify-otp", (req, res) => {
     res.send("Invalid OTP");
   }
 });
-app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "index.html"));
-});
 app.listen(3000, () => {
   console.log("Server running on port 3000");
 });
