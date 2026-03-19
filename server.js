@@ -55,6 +55,10 @@ app.post("/verify-otp", (req, res) => {
     }
 });
 
+app.get('/',(req,res)=>{
+    res.send('Server is Alive.')
+})
+
 app.listen(3000, () => {
     console.log("Server running on port 3000");
 });
